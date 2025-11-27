@@ -10,17 +10,12 @@ Matheus Bolsanello Marangon - RA: 2509468
 
 Este projeto consiste no desenvolvimento de um site para uma pizzaria fictícia, criado com o objetivo de praticar conceitos de TypeScript aplicado ao desenvolvimento Web, além de simular funcionalidades de um sistema real, como:
 
-Cadastro de clientes
-
-Cadastro de produtos (pizzas, bebidas etc.)
-
-Registro de pedidos
-
-Itens do pedido
-
-Cálculo automático de totais
-
-Integração com banco de dados SQL Server
+- Cadastro de clientes
+- Cadastro de produtos (pizzas, bebidas etc.)
+- Registro de pedidos
+- Itens do pedido
+- Cálculo automático de totais
+- Integração com banco de dados SQL Server
 
 Todo o site foi desenvolvido com HTML, CSS, JavaScript/TypeScript e comunicação com um banco de dados SQL Server através de scripts SQL fornecidos pelo SQL Server Management Studio.
 
@@ -28,29 +23,21 @@ Todo o site foi desenvolvido com HTML, CSS, JavaScript/TypeScript e comunicaçã
 
 O repositório contém:
 
-Código fonte do site
-
-Arquivos HTML das páginas
-
-CSS para layout
-
-Scripts TypeScript/JavaScript para interação
-
-Banco de dados SQL (script incluso abaixo)
+- Código fonte do site
+- Arquivos HTML das páginas
+- CSS para layout
+- Scripts TypeScript/JavaScript para interação
+- Banco de dados SQL (script incluso abaixo)
 
 ## 🖥 Pré-requisitos
 
 Antes de executar o projeto localmente, é necessário ter instalado:
 
-Node.js (versão recomendada: LTS)
-
-TypeScript (global ou local no projeto)
-
-SQL Server
-
-SQL Server Management Studio (SSMS)
-
-Navegador atualizado (Chrome, Edge ou Firefox)
+- Node.js (versão recomendada: LTS)
+- TypeScript (global ou local no projeto)
+- SQL Server
+- SQL Server Management Studio (SSMS)
+- Navegador atualizado (Chrome, Edge ou Firefox)
 
 Não é necessário instalar dependências via npm, pois todos os arquivos já estão incluídos no repositório.
 
