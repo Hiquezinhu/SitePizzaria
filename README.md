@@ -124,22 +124,37 @@ SELECT * FROM dbo.Produtos;
 
 ## 📂 Estrutura do Projeto
 ```sitePizzaria/
-│
-├── index.html               # página principal
+
 ├── styles/                  # CSS do sistema
 │   └── style.css
 │
-├── scripts/                 # TypeScript do projeto
-│   ├── clientes.ts          # operações de cadastro/consulta
-│   ├── produtos.ts          # registros de produtos no sistema
-│   ├── pedidos.ts           # lógica de pedidos e cálculo de total
-│   ├── itensPedido.ts       # gerenciamento dos itens dos pedidos
-│   ├── conexao.ts           # conexão com o SQL Server (métodos base)
-│   └── app.ts               # integração geral
+├── backend/                
+│   ├── backend.json          
+│   ├── db.js        
+│   ├── server.js  
+│   └── sl.env
 │
-├── dist/                    # JavaScript compilado
-├── assets/                  # imagens do site
-└── tsconfig.json            # configuração TypeScript
+├── node_modules/
+│
+├── src/                
+│   ├── clientes.htm        
+│   ├── emissão.html       
+│   ├── index.css 
+│   ├── index.d.ts
+│   ├── index.d.ts.map       
+│   ├── index.html       
+│   ├── index.js
+│   ├── index.js.map
+│   ├── index.ts        
+│   ├── mammamia.png       
+│   ├── pedido.html
+│   ├── pedidoCliente.html
+│   ├── produtos.html         
+│   └── ralatorio.html
+│
+├── package-lock.json
+├── package.json            
+└── tsconfig.json     
 ```
 
 ## 📚 Funcionalidades Implementadas
