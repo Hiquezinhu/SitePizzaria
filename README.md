@@ -44,16 +44,16 @@ Não é necessário instalar dependências via npm, pois todos os arquivos já e
 ## ⚙️ Como Executar o Projeto
 
 ### Clone o repositório:
-
+```
 git clone https://github.com/Hiquezinhu/SitePizzaria
-
+```
 
 Abra o projeto em qualquer editor, como Visual Studio Code.
 
 ### Compile o TypeScript (caso faça alterações):
-
+```
 tsc
-
+```
 
 Abra o arquivo index.html no navegador para visualizar o site.
 
