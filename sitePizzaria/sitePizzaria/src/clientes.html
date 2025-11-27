@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clientes</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    
+
+<header class="site-header">
+    <div class="header-container">
+ 
+
+      <!-- Logo central -->
+<a href="index.html" class="logo-link">
+      <img src="mammamia.png" alt="Logo do site" class="logo">
+      </a>
+    </div>
+  </header>
+
+<nav class="nav-header">
+    <a href="pedido.html" class="nav-btn">Pedido</a>
+    <a href="clientes.html" class="nav-btn">C͟l͟i͟e͟n͟t͟e͟s͟</a>
+    <a href="produtos.html" class="nav-btn">ㅤProdutos</a>
+    <a href="emissao.html" class="nav-btn">Emissão</a>
+    <a href="relatorios.html" class="nav-btn">Relatórios</a>
+  </nav>
+
+
+<main>
+    <div class="container-clientes">
+
+  <!-- CADASTRO -->
+  <div class="box cadastro-box">
+    <h2>Cadastrar Cliente</h2>
+    <label>Nome:</label>
+    <input type="text" id="nome" />
+    <label>Telefone:</label>
+    <input type="text" id="telefone" />
+    <label>Endereço:</label>
+    <input type="text" id="endereco" />
+    <button id="cadastrarCliente">Cadastrar</button>
+
+    <div class="excluir-area">
+      <input type="number" id="codigoExcluir" placeholder="Código para excluir" />
+      <button id="excluirCliente">Excluir</button>
+    </div>
+  </div>
+
+  <!-- LISTA -->
+  <div class="box lista-box">
+    <h2>Clientes Cadastrados</h2>
+    <ul id="listaClientes"></ul>
+  </div>
+
+</div>
+
+<!-- Certifique-se de carregar o JS após o HTML -->
+<script src="index.js"></script>
+
+
+</body>
+</html>

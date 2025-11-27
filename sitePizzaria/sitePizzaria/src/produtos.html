@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produtos</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    
+
+<header class="site-header">
+    <div class="header-container">
+ 
+
+      <!-- Logo central -->
+<a href="index.html" class="logo-link">
+      <img src="mammamia.png" alt="Logo do site" class="logo">
+      </a>
+    </div>
+  </header>
+
+<nav class="nav-header">
+    <a href="pedido.html" class="nav-btn">Pedido</a>
+    <a href="clientes.html" class="nav-btn">Clientes</a>
+    <a href="produtos.html" class="nav-btn">ㅤP͟r͟o͟d͟u͟t͟o͟s͟</a>
+    <a href="emissao.html" class="nav-btn">Emissão</a>
+    <a href="relatorios.html" class="nav-btn">Relatórios</a>
+  </nav>
+
+  <div class="container-produtos">
+
+  <!-- CADASTRO -->
+  <div class="box cadastro-box">
+    <h2>Cadastrar Produto</h2>
+    <label>Nome:</label>
+    <input type="text" id="nomeProduto" />
+    <label>Preço:</label>
+    <input type="number" id="precoProduto" />
+    <label>Tipo:</label>
+    <select id="tipoProduto">
+      <option value="bebida">Bebida</option>
+      <option value="pizza">Pizza</option>
+      <option value="pizzaDoce">Pizza Doce</option>
+    </select>
+    <button id="cadastrarProduto">Cadastrar</button>
+  </div>
+
+  <!-- EXCLUSÃO -->
+  <div class="box excluir-box">
+  <h2>Excluir Produto</h2>
+  <div class="excluir-area">
+    <input type="number" id="codigoExcluirProduto" placeholder="Código do produto">
+    <button id="excluirProduto">Excluir</button>
+
+    <h2>Produtos Cadastrados</h2>
+    <ul id="listaProdutos"></ul>
+  </div>
+</div>
+
+
+
+
+    <!-- O JavaScript compilado do TypeScript -->
+    <script src="index.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,681 @@
+/* ======= VARIÁVEIS DE CONFIGURAÇÃO ======= */
+:root {
+  --header-bg: hsl(12, 75%, 41%);
+  --header-height: 120px;
+  --logo-size: 160px;
+  --header-text-color: white;
+  --header-font: "Segoe UI", sans-serif;
+
+  --nav-bg: #da361c;
+  --nav-text-color: #f9b729;
+  --nav-hover: #ffb84d;
+
+  --body-bg-start: #fbe7c3; /* início do gradiente */
+  --body-bg-end: #fbe7c3;   /* fim do gradiente */
+}
+
+/* ======= ESTILO GERAL ======= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--body-bg-start), var(--body-bg-end));
+  font-family: var(--header-font);
+}
+
+/* ======= HEADER PRINCIPAL ======= */
+.site-header {
+  background-color: var(--header-bg);
+  color: var(--header-text-color);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* botão esquerda | logo central | direita */
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 30px;
+}
+
+/* Logo centralizada */
+.logo-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+/* Logo centralizada */
+.logo {
+  height: var(--logo-size);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.menu-btn {
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: var(--header-text-color);
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: var(--header-text-color);
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.header-right a:hover {
+  opacity: 0.7;
+}
+
+/* ======= SEGUNDO HEADER (NAVBAR) ======= */
+.nav-header {
+  background-color: var(--nav-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 170px;
+  padding: 20px 0;
+  position: sticky;
+  top: var(--header-height);
+  z-index: 999;
+}
+
+.nav-btn {
+  color: var(--nav-text-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* efeito animado: cor de fundo se expande da esquerda */
+
+
+.nav-btn:hover::before {
+  left: 0;
+}
+
+.nav-btn:hover {
+  color: white;
+  z-index: 1; /* texto acima do efeito */
+}
+
+/* ======= CONTEÚDO PRINCIPAL ======= */
+main {
+  padding: 40px;
+  text-align: center;
+  background-color: transparent; /* fundo do body aparece */
+  color: white;
+}
+
+
+
+/*==============================================================================================================================*/
+
+
+/* ===== GERAL ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background-color: #b8391a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ===== CONTAINERS ===== */
+.container-clientes,
+.container-produtos {
+  display: flex;
+  justify-content: center; /* centraliza os retângulos */
+  align-items: flex-start;
+  gap: 40px;
+  margin: 50px auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.container-pedidos {
+  display: flex;
+  justify-content: flex-start; /* alinhamento inicial */
+  align-items: flex-start;
+  gap: 40px;
+  margin: 50px auto;
+  max-width: 1200px;
+  flex-wrap: nowrap; /* mantém boxes lado a lado */
+}
+
+/* ===== BOX GERAL ===== */
+.box,
+.produtos-box,
+.pedidos-box {
+  background: #da361c;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 25px 30px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;   /* altura máxima para scroll */
+  overflow-y: auto;    /* scroll interno se exceder */
+}
+
+/* ===== TITULOS ===== */
+.cadastro-box h2,
+.lista-box h2,
+.produtos-box h2,
+.pedidos-box h2 {
+  color: #f9b729;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ===== INPUTS ===== */
+.cadastro-box input,
+.produtos-box input,
+.item input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* ===== BUTTONS ===== */
+.cadastro-box button,
+.produtos-box button,
+.add-btn,
+#finalizarPedido,
+.excluir-area button {
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.cadastro-box button {
+  background-color: #7ed957;
+  color: white;
+  padding: 10px;
+}
+
+.cadastro-box button:hover {
+  background-color: #58923f;
+}
+
+.produtos-box button,
+.add-btn {
+  background-color: #7ed957;
+  color: white;
+  padding: 6px 10px;
+}
+
+.produtos-box button:hover,
+.add-btn:hover {
+  background-color: #58923f;
+}
+
+#finalizarPedido {
+  background-color: #7ed957;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+#finalizarPedido:hover {
+  background-color: #58923f;
+}
+
+.excluir-area button {
+  background-color: #f56f6f;
+  color: white;
+  padding: 8px 12px;
+}
+
+.excluir-area button:hover {
+  background-color: #ca4444;
+}
+
+/* ===== LISTAS ===== */
+#listaClientes,
+#listaCarrinho {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#listaClientes li,
+#listaCarrinho li,
+.item {
+  background: #fff3ee;
+  border: 1px solid #f0c2b3;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 15px;
+}
+
+/* ===== ITENS DE PRODUTOS ===== */
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item span {
+  font-weight: bold;
+  color: #000000;
+}
+
+.item input {
+  width: 50px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* ===== CARRINHO ===== */
+#listaCarrinho {
+  margin-bottom: 10px;
+}
+
+/* ===== BOX PRODUTOS ===== */
+.produtos-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.produtos-box label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #62245c;
+}
+
+.produtos-box select {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+
+.excluir-box h2 {
+  color: #f9b729 !important; /* branco, mude se quiser */
+  text-align: center;
+}
+
+.cadastro-box label {
+  color: #ffffff !important; /* branco */
+  font-weight: bold;
+  text-align: center;
+}
+
+#totalPedido {
+  color: #ffffff !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* ===== AJUSTE DE TAMANHOS ===== */
+
+/* Menus de Clientes e de Cadastro */
+.box {
+  width: 400px !important;
+}
+
+/* ===== AJUSTES ESPECÍFICOS PARA O MENU DE PEDIDOS ===== */
+.container-pedidos {
+  display: flex;
+  justify-content: center;     /* centraliza horizontalmente */
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: nowrap;           /* mantém tudo em linha */
+}
+
+/* Força o tamanho dos boxes do menu de pedidos */
+.container-pedidos .pedidos-box {
+  flex: 0 0 330px;             /* largura fixa de 380px */
+  width: 330px !important;
+  min-width: 330px;
+}
+
+.pedidos-box label[for="selectCliente"] {
+  color: #f9b729;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+}
+
+#selectCliente {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fffaf7;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: color #ca4444;
+  border: 2px solid #ca4444;
+  transition: all 0.3s ease;
+}
+
+/* Quando o usuário passa o mouse */
+#selectCliente:hover {
+  border-color: #e66b35;
+  background-color: #fff3ee;
+}
+
+/* Quando o campo é clicado */
+#selectCliente:focus {
+  outline: none;
+  box-shadow: 0 0 5px #f47b42;
+}
+
+#tipoProduto {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fffaf7;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: color #ca4444;
+  border: 2px solid #ca4444;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+#codigoExcluirProduto {
+width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fffaf7;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: color #ca4444;
+  border: 2px solid #ca4444;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+  margin-left: 45px;
+}
+
+#codigoExcluir {
+  margin-top: 15px;
+}
+
+#listaNotas {
+  background: #da361c;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 25px 30px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+
+  display: flex;
+  justify-content: center; /* centraliza os retângulos */
+  align-items: flex-start;
+  gap: 40px;
+  margin: 50px auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.container h2 {
+  color: #ffb84d;
+  text-align: center;
+  font-size: 30px;
+  
+}
+
+/* ====== BOTÃO "LIMPAR TODAS" ====== */
+#limparNotas {
+  display: block;
+  margin: 20px auto; /* centraliza e cria espaçamento */
+  background-color: #f56f6f; /* mesma cor dos botões de excluir */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-bottom: 31px;
+}
+
+#limparNotas:hover {
+  background-color: #ca4444; /* cor ao passar o mouse */
+}
+
+
+
+
+
+#dataRelatorio {
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  text-align: center;
+}
+
+#gerarRelatorio {
+  background-color: #7ed957;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#gerarRelatorio:hover {
+  background-color: #218838;
+}
+
+#resultadoRelatorio {
+  background-color: #da361c;
+  border: 1px solid #da361c;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  line-height: 1.6;
+  text-align: center;
+  color: #f9b729;
+
+  width: 50%;              /* deixa a caixa menor (ajuste o valor se quiser) */
+  margin: 20px auto;       /* centraliza horizontalmente e dá espaçamento vertical */
+  padding: 10px;           /* diminui o espaço interno */
+  font-size: 14px;         /* texto um pouco menor */
+}
+
+
+
+.relatorio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente se tiver altura */
+  gap: 0px; /* espaçamento entre os elementos */
+  margin-top: 0px; /* distancia do topo */
+  text-align: center;
+  color: #f9b729;
+  font-size: 30px;
+}
+
+.relatorio-container label {
+  color: #333; /* opcional, altera cor do texto */
+  font-weight: bold;
+}
+
+.relatorio-container input[type="date"] {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+#gerarRelatorio {
+  background-color: #7ed957; /* mesma cor dos outros botões */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#gerarRelatorio:hover {
+  background-color: #218838;
+}
+
+label[for="dataRelatorio"] {
+  color: #f9b729; /* 👉 Altere aqui a cor */
+  font-weight: bold; /* opcional */
+  font-size: 20px;   /* opcional */
+  margin-bottom: 0%;
+}
+
+/* título dentro do container de relatórios */
+.relatorio-container h2,
+.container h2 {
+  margin: 20px 0 6px 0; /* superior | direita | inferior | esquerda */
+  padding: 0;
+  line-height: 1.1;
+}
+
+/* garante que o label não tenha margem superior extra */
+label[for="dataRelatorio"] {
+  margin: 0;
+  display: block;
+}
+
+/*================================================================================================*/
+
+/* ===== Estilo exclusivo do index.html ===== */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+#boxFuncionario,
+#boxCliente {
+  background-color: #da361c;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  width: 300px;
+  text-align: left;
+}
+
+#boxFuncionario h2,
+#boxCliente h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f9b729;
+}
+
+#boxFuncionario label,
+#boxCliente label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+#boxFuncionario input,
+#boxCliente input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+#boxFuncionario button,
+#boxCliente button {
+  width: 100%;
+  padding: 10px;
+  background-color: #7ed957;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#boxFuncionario button:hover,
+#boxCliente button:hover {
+  background-color: #218838;
+}
+
+#erroLogin {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#totalCarrinho {
+  color: #f9b729; 
+  font-weight: bold; 
+  text-align: center;
+}
+
+#clienteInfo {
+  text-align: center;
+}
+
+

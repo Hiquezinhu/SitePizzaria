@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedido</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    
+
+<header class="site-header">
+    <div class="header-container">
+ 
+
+      <!-- Logo central -->
+<a href="index.html" class="logo-link">
+      <img src="mammamia.png" alt="Logo do site" class="logo">
+      </a>
+    </div>
+  </header>
+
+<nav class="nav-header">
+    <a href="pedido.html" class="nav-btn">P͟e͟d͟i͟d͟o͟</a>
+    <a href="clientes.html" class="nav-btn">Clientes</a>
+    <a href="produtos.html" class="nav-btn">ㅤProdutos</a>
+    <a href="emissao.html" class="nav-btn">Emissão</a>
+    <a href="relatorios.html" class="nav-btn">Relatórios</a>
+  </nav>
+
+  <div class="container-pedidos">
+
+  <!-- Bebidas -->
+  <div class="pedidos-box">
+    <h2>Bebidas</h2>
+    <div id="produtosBebida"></div>
+  </div>
+
+  <!-- Pizzas -->
+  <div class="pedidos-box">
+    <h2>Pizzas</h2>
+    <div id="produtosPizza"></div>
+  </div>
+
+  <!-- Pizzas Doces -->
+  <div class="pedidos-box">
+    <h2>Pizzas Doces</h2>
+    <div id="produtosPizzaDoce"></div>
+  </div>
+
+
+
+
+
+<!-- Carrinho -->
+<div class="pedidos-box">
+  <h2>Carrinho</h2>
+  <ul id="listaCarrinho"></ul>
+  <h2 id="totalCarrinho">Total: R$ 0,00</h2>
+  <button id="finalizarPedido">Finalizar Pedido</button>
+
+  <!-- Selecionar Cliente -->
+  <label for="selectCliente">Selecione o Cliente:</label>
+  <select id="selectCliente">
+    <option value="">-- Escolha um cliente --</option>
+  </select>
+</div>
+
+
+</div>
+
+
+
+    <!-- O JavaScript compilado do TypeScript -->
+    <script src="index.js"></script>
+
+
+</body>
+</html>

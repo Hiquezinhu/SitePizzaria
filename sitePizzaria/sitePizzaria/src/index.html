@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamma Mia Pizzaria</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+
+
+<header class="site-header">
+    <div class="header-container">
+ 
+
+      <!-- Logo central -->
+
+      <a href="index.html" class="logo-link">
+      <img src="mammamia.png" alt="Logo do site" class="logo">
+      </a>
+    
+    </div>
+  </header>
+
+
+
+<div class="main-container">
+  <!-- Login do Funcionário -->
+  <div id="boxFuncionario">
+    <h2>Login do Funcionário</h2>
+    <label for="loginFunc">Usuário:</label>
+    <input type="text" id="loginFunc" placeholder="Login">
+    <label for="senhaFunc">Senha:</label>
+    <input type="password" id="senhaFunc" placeholder="Senha">
+    <button id="btnLoginFunc">Entrar</button>
+    <p id="erroLogin" style="display:none;">Login ou senha incorretos!</p>
+  </div>
+
+  <!-- Cadastro de Clientes -->
+  <div id="boxCliente">
+    <h2>Cadastro de Clientes</h2>
+    <label for="nomeCliente">Nome:</label>
+    <input type="text" id="nomeCliente" placeholder="Nome do cliente">
+    <label for="foneCliente">Telefone:</label>
+    <input type="text" id="foneCliente" placeholder="Telefone">
+    <label for="enderecoCliente">Endereço:</label>
+    <input type="text" id="enderecoCliente" placeholder="Endereço">
+    <button id="btnCadastrarCliente">Cadastrar</button>
+
+    <hr>
+
+    <h2>Login do Cliente</h2>
+    <label for="loginNomeCliente">Nome:</label>
+    <input type="text" id="loginNomeCliente" placeholder="Nome do cliente">
+    <label for="loginFoneCliente">Telefone:</label>
+    <input type="text" id="loginFoneCliente" placeholder="Telefone">
+    <button id="btnLoginCliente">Entrar</button>
+    <button id="btnEntrarVisitante">Entrar como Visitante</button>
+    <p id="erroLoginCliente" style="display:none;">Cliente não encontrado!</p>
+  </div>
+</div>
+
+
+    <!-- O JavaScript compilado do TypeScript -->
+    <script src="index.js"></script>
+
+</body>
+</html>

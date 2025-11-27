@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pedido - Cliente</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+       <!-- Logo central -->
+    <a href="index.html" class="logo-link">
+      <img src="mammamia.png" alt="Logo do site" class="logo">
+      </a>
+    </div>
+  </header>
+
+  <!-- Navegação reduzida (apenas Pedido) -->
+  <nav class="nav-header">
+    <a href="pedidoCliente.html" class="nav-btn">Pedido</a>
+  </nav>
+
+  <!-- Conteúdo: mantém os mesmos ids que o index.js usa -->
+  <div class="container-pedidos">
+
+    <!-- Bebidas -->
+    <div class="pedidos-box">
+      <h2>Bebidas</h2>
+      <div id="produtosBebida"></div>
+    </div>
+
+    <!-- Pizzas -->
+    <div class="pedidos-box">
+      <h2>Pizzas</h2>
+      <div id="produtosPizza"></div>
+    </div>
+
+    <!-- Pizzas Doces -->
+    <div class="pedidos-box">
+      <h2>Pizzas Doces</h2>
+      <div id="produtosPizzaDoce"></div>
+    </div>
+
+    <!-- Carrinho (aqui mostramos o cliente logado e o carrinho) -->
+    <div class="pedidos-box">
+      <h2>Carrinho</h2>
+
+      <!-- mostra nome do cliente logado -->
+      <div id="clienteInfo" style="margin-bottom:10px; font-weight:600; color:#fff3ee;"></div>
+
+      <ul id="listaCarrinho"></ul>
+      <h3 id="totalCarrinho">Total: R$ 0,00</h3>
+      <button id="finalizarPedido">Finalizar Pedido</button>
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+
+  <script>
+    // apenas exibe o nome do cliente logado no topo do carrinho
+    const clienteLogado = JSON.parse(localStorage.getItem("clienteLogado"));
+    const clienteInfo = document.getElementById("clienteInfo");
+    if (!clienteLogado) {
+      // se não estiver logado, volta pro index
+      window.location.href = "index.html";
+    } else {
+      clienteInfo.textContent = `Cliente: ${clienteLogado.nome}`;
+    }
+  </script>
+</body>
+</html>
