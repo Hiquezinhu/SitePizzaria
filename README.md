@@ -1,7 +1,7 @@
 # 🍕Projeto Pizzaria — Sistema Web em TypeScript
 ## Disciplina: Programação TypeScript
 ### Professor(a): Eduardo Popovici
-Aluno: 
+Alunos: 
 - Alexandre Comparone - RA: 2500621
 - Arthur lima bezerra - RA: 2500315
 - Henrique Rossi - RA: 2511641
