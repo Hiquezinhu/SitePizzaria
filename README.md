@@ -7,6 +7,9 @@ Alunos:
 - Henrique Rossi - RA: 2511641
 - Henrique Bernardo Stela - RA: 2502079
 - Matheus Bolsanello Marangon - RA: 2509468
+
+
+
 ## 📌 Descrição do Projeto
 
 Este projeto consiste no desenvolvimento de um site para uma pizzaria fictícia, criado com o objetivo de praticar conceitos de TypeScript aplicado ao desenvolvimento Web, além de simular funcionalidades de um sistema real, como:
