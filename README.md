@@ -1,12 +1,12 @@
-#Projeto Pizzaria — Sistema Web em TypeScript🍕
-##Disciplina: Programação TypeScript
-###Professor(a): Eduardo Popovici
+# 🍕Projeto Pizzaria — Sistema Web em TypeScript
+## Disciplina: Programação TypeScript
+### Professor(a): Eduardo Popovici
 Aluno: Alexandre Comparone - RA: 2500621
 Arthur lima bezerra - RA: 2500315
 Henrique Rossi - RA: 2511641
 Henrique Bernardo Stela - RA: 2502079
 Matheus Bolsanello Marangon - RA: 2509468
-##📌 Descrição do Projeto
+## 📌 Descrição do Projeto
 
 Este projeto consiste no desenvolvimento de um site para uma pizzaria fictícia, criado com o objetivo de praticar conceitos de TypeScript aplicado ao desenvolvimento Web, além de simular funcionalidades de um sistema real, como:
 
@@ -24,7 +24,7 @@ Integração com banco de dados SQL Server
 
 Todo o site foi desenvolvido com HTML, CSS, JavaScript/TypeScript e comunicação com um banco de dados SQL Server através de scripts SQL fornecidos pelo SQL Server Management Studio.
 
-##📦 Estrutura do Projeto
+## 📦 Estrutura do Projeto
 
 O repositório contém:
 
@@ -38,7 +38,7 @@ Scripts TypeScript/JavaScript para interação
 
 Banco de dados SQL (script incluso abaixo)
 
-##🖥 Pré-requisitos
+## 🖥 Pré-requisitos
 
 Antes de executar o projeto localmente, é necessário ter instalado:
 
@@ -54,23 +54,23 @@ Navegador atualizado (Chrome, Edge ou Firefox)
 
 Não é necessário instalar dependências via npm, pois todos os arquivos já estão incluídos no repositório.
 
-##⚙️ Como Executar o Projeto
+## ⚙️ Como Executar o Projeto
 
-###Clone o repositório:
+### Clone o repositório:
 
 git clone https://github.com/Hiquezinhu/SitePizzaria
 
 
 Abra o projeto em qualquer editor, como Visual Studio Code.
 
-###Compile o TypeScript (caso faça alterações):
+### Compile o TypeScript (caso faça alterações):
 
 tsc
 
 
 Abra o arquivo index.html no navegador para visualizar o site.
 
-##🗄 Configuração do Banco de Dados (SQL Server)
+## 🗄 Configuração do Banco de Dados (SQL Server)
 
 Abaixo está o script completo utilizado para criar o banco de dados PIZZARIA, tabelas, relacionamentos e índices.
 
@@ -131,7 +131,7 @@ SELECT * FROM dbo.Produtos;
 ```
 
 
-##📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 ```sitePizzaria/
 │
 ├── index.html               # página principal
@@ -151,7 +151,7 @@ SELECT * FROM dbo.Produtos;
 └── tsconfig.json            # configuração TypeScript
 ```
 
-##📚 Funcionalidades Implementadas
+## 📚 Funcionalidades Implementadas
 
 Cadastro de clientes
 
@@ -165,7 +165,7 @@ Cálculo automático de totais
 
 Interface simples e intuitiva para navegação
 
-##📝 Considerações Finais
+## 📝 Considerações Finais
 
 O projeto demonstra a aplicação prática de conceitos de TypeScript, modelagem de dados, interação com banco SQL e organização de um sistema Web.
 O objetivo foi criar uma estrutura que simula um cenário real de pizzaria, permitindo manipulação de clientes, produtos e pedidos
